@@ -26,6 +26,7 @@ var (
 	ErrSecretNotSet           = errors.New("secret is not set")
 	ErrTokenNotSet            = errors.New("token is not set")
 	ErrTokenNotValid          = errors.New("token is not valid")
+	ErrQNotValid              = errors.New("q is not valid")
 	ErrTTLNotSet              = errors.New("TTL is not set")
 	ErrTTLTooLow              = errors.New("TTL is too low")
 	ErrUsernameNotSet         = errors.New("username is not set")

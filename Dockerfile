@@ -56,6 +56,8 @@ ARG COMMIT=unknown
 ARG TARGETPLATFORM
 RUN GOARCH="$(xcputranslate translate -targetplatform ${TARGETPLATFORM} -field arch)" \
     GOARM="$(xcputranslate translate -targetplatform ${TARGETPLATFORM} -field arm)" \
+    echo $GOARCH \
+    echo $GOARM \
     go build -trimpath -ldflags="-s -w \
     -X 'main.version=$VERSION' \
     -X 'main.created=$CREATED' \
